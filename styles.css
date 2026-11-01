@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #f4f6f8;
+    color: #1b1f24;
+}
+
+.container {
+    width: min(960px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.panel {
+    background: #fff;
+    padding: 20px;
+    margin: 16px 0;
+    border-radius: 10px;
+}
+
+.actions {
+    margin-top: 12px;
+}
+
+button {
+    margin: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.product-card {
+    border: 1px solid #ccd5dd;
+    border-radius: 8px;
+    padding: 16px;
+    background: white;
+}
+
+#task-list li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 6px 0;
+}
+
+#task-list li span {
+    flex: 1;
+}
